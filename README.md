@@ -42,7 +42,7 @@ The contract requires **no input parameters during deployment**, making it simpl
 ## 🔗 Deployed Smart Contract
 
 **Contract Address:**  
-`https://coston2-explorer.flare.network//tx/0xe8258e60dc6ddc80908464926397b558ed98ed9bc8e2dbf40cc3c285df5105fe`
+`https://coston2-explorer.flare.network//tx/0x6ca9b2c168af0201f2b889f29800994e7394f129987783be927e65eea6047d62`
 
 > Replace with the correct address or blockchain explorer link if needed.
 
