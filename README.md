@@ -1,75 +1,105 @@
-# Decentralized On-Chain Chatroom (Flare Network)
+# 📚 StudyRoom & On-Chain Chatroom (Flare Network)
 
-## **Contract Address**
+A beginner-friendly Solidity project that includes a simple **StudyRoom Smart Contract** and a fully decentralized **On-Chain Chatroom** built on the **Flare Coston2 Testnet**.  
+This project is ideal for beginners learning smart contracts, arrays, state variables, and Web3 frontend integration.
+
+---
+
+## 📌 StudyRoom Smart Contract
+
+A Solidity smart contract that allows users to join a virtual study room and post study-related messages stored directly on the blockchain.
+
+### 🚀 What It Does
+- Registers the deployer as the first member  
+- Allows anyone to join the study room  
+- Lets users post study notes/messages  
+- Stores all member addresses in an array  
+- Stores all messages on-chain  
+- Provides public functions to check total members and messages  
+
+### ⭐ Features
+- ✔ No constructor input required  
+- ✔ Beginner-friendly code  
+- ✔ Public and transparent data  
+- ✔ Great for learning Solidity arrays and state variables  
+
+### 🔗 Deployment Details
+**Transaction:**  
+https://coston2-explorer.flare.network//tx/0x6ca9b2c168af0201f2b889f29800994e7394f129987783be927e65eea6047d62
+
+---
+
+# 💬 Decentralized On-Chain Chatroom (Flare Network)
+
+A fully decentralized chatroom where users can join, send messages, and read the entire chat history — all stored permanently on-chain.
+
+## 📝 Contract Address
 **0xab47785613B8df84074bEFBa3d0BD5daD88845Ea**  
 Explorer: https://coston2-explorer.flare.network/address/0xab47785613B8df84074bEFBa3d0BD5daD88845Ea
 
 ---
 
-## **Description**
-This project is a fully on-chain decentralized chatroom built on the Flare **Coston2 Testnet**.  
-Users can join a shared chatroom, send messages, and read all previously posted messages — all stored directly on the blockchain. The UI is built with Next.js and integrates using wagmi + viem for seamless Web3 interaction.
-
-The purpose of this project is to demonstrate how simple social interactions (such as chatrooms) can be implemented using smart contracts, allowing censorship-resistant and trustless communication between users.
+## 📖 Description
+This chatroom demonstrates trustless and censorship-resistant communication on the Flare **Coston2 Testnet**.  
+The frontend is built with **Next.js**, using **wagmi + viem** for seamless Web3 wallet and contract interaction.
 
 ---
 
-## **Features**
-### ✅ **Smart Contract Features**
-- **Join the chatroom** using the `joinRoom()` function  
-- **Post messages on-chain** using `postMessage(message)`  
-- **Fully decentralized storage** for:
-  - Member addresses  
-  - Chat messages  
-- **View total chat members** (`totalMembers()`)
-- **View total messages** (`totalMessages()`)
-- **Retrieve any stored message** from `messages(index)`
+# 🎯 Features
 
-### ✅ **Frontend Features**
-- Wallet connection gating (must connect to use)
-- Join room button with loading state
-- Message posting UI
-- Auto-updating message list
-- Transaction hash tracking
-- Error and loading state handling
+## 🔗 Smart Contract Features
+- Join the chatroom (`joinRoom()`)
+- Post messages (`postMessage(message)`)
+- Fully decentralized and permanent message storage  
+- View total number of members and messages  
+- Retrieve any stored message by index  
+
+## 🖥 Frontend Features
+- Web3 wallet connection  
+- Join room button with loading state  
+- Message posting interface  
+- Auto-updating message list  
+- Shows transaction hash after message posting  
+- Error + loading state management  
 
 ---
 
-## **How It Solves Real Problems**
-Traditional chat systems rely on centralized servers that may:
-- Store user data insecurely  
-- Become unavailable  
-- Be censored or controlled  
-- Modify or delete user messages  
+# 🛠 Why This Matters
 
-This decentralized chatroom solves these issues by moving communication on-chain, offering:
+### ✅ 1. Censorship-Resistant  
+No admin can edit or remove messages — everything is stored immutably on-chain.
 
-### **1. Censorship Resistance**
-Messages stored on the blockchain cannot be edited, deleted, or hidden by any centralized entity.
+### ✅ 2. Transparent  
+All chat history is publicly verifiable and accessible.
 
-### **2. High Transparency**
-All interactions are publicly accessible, verifiable, and immutable.
+### ✅ 3. Trustless Interaction  
+Users rely only on the smart contract, not a centralized server.
 
-### **3. Trustless Interaction**
-Users do not need to trust any server or admin — the smart contract enforces all rules.
+### ✅ 4. Great Web3 Learning Example  
+Covers:
+- Smart contract deployment  
+- React + Web3 integration  
+- wagmi hooks (read + write functions)  
+- Waiting for tx confirmations  
+- On-chain state rendering  
 
-### **4. Web3 UX Demonstration**
-This project is an excellent educational example of:
-- Smart contract integration with wagmi  
-- Using useReadContract + useWriteContract  
-- Waiting for transaction receipts  
-- Handling asynchronous blockchain workflows  
-
-### **5. Real Use Cases**
+### ✅ 5. Real-World Use Cases
+- DAO communication  
 - Web3 community chatrooms  
-- DAO announcements  
 - On-chain social platforms  
-- Permanent proof-of-message communication  
+- Permanent proof-of-message apps  
 
 ---
 
-## **Summary**
-This project showcases a clean, functional, and extensible decentralized chat system — perfect for learning Web3 development, experimenting with smart contracts, or demonstrating on-chain social interactions.
+# 📌 Summary
+
+This project demonstrates:
+- Basics of Solidity smart contracts  
+- How to store data on-chain  
+- How to create a Web3-enabled frontend  
+- How decentralized chatrooms can function in real life  
+
+A simple but powerful example for learning Web3 development from scratch.
 
 ---
 
