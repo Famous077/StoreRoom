@@ -1,0 +1,5 @@
+.env
+/prompt 
+/node_modules
+/package-lock.json
+.next/
