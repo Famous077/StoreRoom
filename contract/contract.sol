@@ -1,49 +1,36 @@
-// // SPDX-License-Identifier: MIT
-// pragma solidity ^0.8.0;
+pragma solidity ^0.8.20;
 
-// contract MultiWill {
-//     struct Will {
-//         address recipient;
-//         uint256 amount;
-//         bool claimed;
-//     }
+contract StudyRoom {
 
-//     mapping(address => Will[]) public wills; // Each owner can have multiple wills
+    // Store all members
+    address[] public members;
 
-//     function createWill(address _recipient) public payable {
-//         require(_recipient != address(0), "Invalid recipient address");
-//         require(msg.value > 0, "Amount must be greater than zero");
+    // Store study messages
+    string[] public messages;
 
-//         wills[msg.sender].push(Will({
-//             recipient: _recipient,
-//             amount: msg.value,
-//             claimed: false
-//         }));
-//     }
+    // Constructor: runs only once, no input fields
+    constructor() {
+        // Optionally add the deployer as the first member
+        members.push(msg.sender);
+    }
 
-//     function claimWill(address _owner, uint256 _index) public {
-//         require(_index < wills[_owner].length, "Invalid will index");
+    // Join the study room
+    function joinRoom() public {
+        members.push(msg.sender);
+    }
 
-//         Will storage userWill = wills[_owner][_index];
-//         require(msg.sender == userWill.recipient, "Only recipient can claim");
-//         require(!userWill.claimed, "Already claimed");
-//         require(userWill.amount > 0, "No funds to claim");
+    // Post a note or study message
+    function postMessage(string memory _message) public {
+        messages.push(_message);
+    }
 
-//         userWill.claimed = true;
-//         payable(userWill.recipient).transfer(userWill.amount);
-//     }
+    // Total number of members
+    function totalMembers() public view returns (uint) {
+        return members.length;
+    }
 
-//     function getMyWillsCount() public view returns (uint256) {
-//         return wills[msg.sender].length;
-//     }
-
-//     function getWill(address _owner, uint256 _index) public view returns (address recipient, uint256 amount, bool claimed) {
-//         require(_index < wills[_owner].length, "Invalid will index");
-//         Will memory userWill = wills[_owner][_index];
-//         return (userWill.recipient, userWill.amount, userWill.claimed);
-//     }
-
-//     function getContractBalance() public view returns (uint256) {
-//         return address(this).balance;
-//     }
-// }
+    // Total messages
+    function totalMessages() public view returns (uint) {
+        return messages.length;
+    }
+}
