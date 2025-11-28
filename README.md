@@ -37,6 +37,9 @@ A fully decentralized chatroom where users can join, send messages, and read the
 **0xab47785613B8df84074bEFBa3d0BD5daD88845Ea**  
 Explorer: https://coston2-explorer.flare.network/address/0xab47785613B8df84074bEFBa3d0BD5daD88845Ea
 
+<img width="1200" height="634" alt="image" src="https://github.com/user-attachments/assets/9f7f365e-9224-4bd8-8b8d-a20921da9ba2" />
+
+
 ---
 
 ## 📖 Description
